@@ -75,3 +75,11 @@ function arrayOpreations(arr = [], opreation) {
         return "Enter valid operation"
     }
 }
+
+function wrappedPush(arr = [], ele) {
+    arr.push(ele)
+}
+
+function wrappedPop(arr = []) {
+    arr.pop()
+}
