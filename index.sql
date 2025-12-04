@@ -1,2 +1,14 @@
-CREATE TABLE students (student_id NUMBER PRIMARY KEY, name VARCHAR2(50));
-CREATE TABLE marks ( mark_id INT PRIMARY KEY, student_id int,subject VARCHAR(50),marks INT,CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES students(student_id));
+CREATE TABLE students (
+student_id NUMBER PRIMARY KEY,
+name VARCHAR2(50)
+);
+
+CREATE TABLE marks (
+mark_id INT PRIMARY KEY,
+student_id int,
+subject VARCHAR(50),
+marks INT,
+CONSTRAINT fk_student 
+FOREIGN KEY (student_id)
+REFERENCES students(student_id)
+);
