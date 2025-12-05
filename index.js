@@ -83,3 +83,19 @@ function wrappedPush(arr = [], ele) {
 function wrappedPop(arr = []) {
     arr.pop()
 }
+
+function sumOfArray(arr = []){
+    var sum = 0;
+    for(var i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+    }
+    return sum;
+}
+
+function productOfArray(arr = []) {
+    var pro = 1;
+    for(var i = 0; i < arr.length; i++) {
+        pro = pro * arr[i]
+    }
+    return pro
+}
